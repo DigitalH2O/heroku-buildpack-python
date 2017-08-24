@@ -61,8 +61,9 @@ sub-env() {
   # Python-specific variables.
   export PYHONHOME=$BUILD_DIR/.heroku/python
   export PYTHONPATH=$BUILD_DIR/
+  export COIN_INSTALL_DIR=coin-2.9.9 
 
-  (
+(
     if [ -d "$ENV_DIR" ]; then
       # shellcheck disable=SC2045
       for e in $(ls "$ENV_DIR"); do

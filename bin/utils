@@ -61,7 +61,7 @@ sub-env() {
   # Python-specific variables.
   export PYHONHOME=$BUILD_DIR/.heroku/python
   export PYTHONPATH=$BUILD_DIR/
-  export COIN_INSTALL_DIR=$BUILD_DIR/coin-2.9.9 
+  export COIN_INSTALL_DIR=$BUILD_DIR/dh2o_triton/dh2o_triton/solver/coin-2.9.9
 
 (
     if [ -d "$ENV_DIR" ]; then
